@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Antonina i Piotr zapraszaja na ceremonie slubna i weselisko 19 wrzesnia 2026."
+    />
+    <title>Antonina x Piotr | 19.09.2026</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#hero" aria-label="Antonina i Piotr">
+        <span>A</span>
+        <span class="brand-cross">x</span>
+        <span>P</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Glowne">
+        <a href="#program" data-i18n="navProgram">Program</a>
+        <a href="#rsvp" data-i18n="navRsvp">RSVP</a>
+        <a href="#post-scriptum" data-i18n="navPost">Post Scriptum</a>
+        <a class="nav-cta" href="#rsvp" data-i18n="navConfirm">Potwierdz obecnosc</a>
+      </nav>
+
+      <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">
+        PL / EN
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="poster-noise" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="heroEyebrow">19 wrzesnia 2026 · 15:00 · Bydgoszcz</p>
+            <h1>Antonina <span>x</span> Piotr</h1>
+            <p class="hero-lede" data-i18n="heroLede">
+              Slubny kadr w klimacie plakatu filmowego, a zaraz po nim weselisko z porzadnym
+              rytmem i miejscem na wszystkie dobre historie.
+            </p>
+
+            <div class="countdown" aria-label="Odliczanie do ceremonii">
+              <div>
+                <strong data-countdown-days>000</strong>
+                <span data-i18n="days">dni</span>
+              </div>
+              <div>
+                <strong data-countdown-hours>00</strong>
+                <span data-i18n="hours">godz.</span>
+              </div>
+              <div>
+                <strong data-countdown-minutes>00</strong>
+                <span data-i18n="minutes">min</span>
+              </div>
+              <div>
+                <strong data-countdown-seconds>00</strong>
+                <span data-i18n="seconds">sek</span>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a class="button button-primary shadow-poster" href="#rsvp" data-i18n="heroCta">
+                Potwierdz obecnosc
+              </a>
+              <a class="button button-secondary" href="#program" data-i18n="heroSecondary">
+                Zobacz program
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-label="Ilustracje Antoniny i Piotra">
+            <img class="paper-bg" src="assets/bg2.jpg" alt="" />
+            <img class="person person-left" src="assets/art1.png" alt="Antonina" />
+            <img class="person person-right" src="assets/art2.png" alt="Piotr" />
+            <div class="date-stamp">
+              <span>19</span>
+              <span>09</span>
+              <span>26</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section program-section" id="program">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="programEyebrow">Program</p>
+            <h2 data-i18n="programTitle">Dwa akty, jedna historia</h2>
+          </div>
+
+          <div class="event-grid">
+            <article class="event-card shadow-poster">
+              <span class="event-part" data-i18n="ceremonyPart">Czesc I — Ceremonia</span>
+              <h3 data-i18n="ceremonyTitle">Bazylika pw. sw. Wincentego a Paulo</h3>
+              <p class="event-time">15:00</p>
+              <p data-i18n="ceremonyCopy">
+                Spotykamy sie w Bazylice w samym sercu Bydgoszczy. Przyjdzcie chwile wczesniej,
+                zeby spokojnie znalezc miejsce.
+              </p>
+              <div class="map-preview" aria-hidden="true">
+                <span>Bazylika</span>
+              </div>
+              <a
+                class="button button-map"
+                href="https://www.google.com/maps/search/?api=1&query=Bazylika+pw.+%C5%9Bw.+Wincentego+a+Paulo+Bydgoszcz"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="mapsCta"
+              >
+                Otworz w Google Maps
+              </a>
+            </article>
+
+            <article class="event-card shadow-poster event-card-accent">
+              <span class="event-part" data-i18n="partyPart">Czesc II — Weselisko</span>
+              <h3 data-i18n="partyTitle">Karczma Gazdowka</h3>
+              <p class="event-time">Szosa Bydgoska 9 · Zoledowo</p>
+              <p data-i18n="partyCopy">
+                Po ceremonii przenosimy akcje do Gazdowki. Bedzie kolacja, parkiet i tempo,
+                ktorego nie trzeba bedzie montowac w postprodukcji.
+              </p>
+              <div class="map-preview map-preview-party" aria-hidden="true">
+                <span>Gazdowka</span>
+              </div>
+              <a
+                class="button button-map"
+                href="https://www.google.com/maps/search/?api=1&query=Karczma+Gazd%C3%B3wka+Szosa+Bydgoska+9+%C5%BBo%C5%82%C4%99dowo"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="mapsCta"
+              >
+                Otworz w Google Maps
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section rsvp-section" id="rsvp">
+        <div class="container rsvp-grid">
+          <div>
+            <p class="eyebrow" data-i18n="rsvpEyebrow">RSVP</p>
+            <h2 data-i18n="rsvpTitle">Dajcie nam znac do 31 lipca 2026</h2>
+            <p data-i18n="rsvpCopy">
+              Wystarczy krotka wiadomosc do Antoniny albo Piotra. Formularz online mozemy podpiac
+              w kolejnym kroku, gdy bedzie gotowy docelowy kanal zbierania odpowiedzi.
+            </p>
+          </div>
+
+          <div class="contact-list">
+            <article class="contact-card">
+              <img src="assets/art1.png" alt="" />
+              <div>
+                <h3>Antonina</h3>
+                <p data-i18n="contactCopy">Kontakt RSVP</p>
+              </div>
+            </article>
+            <article class="contact-card">
+              <img src="assets/art2.png" alt="" />
+              <div>
+                <h3>Piotr</h3>
+                <p data-i18n="contactCopy">Kontakt RSVP</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section post-section" id="post-scriptum">
+        <div class="container">
+          <div class="marquee" aria-hidden="true">
+            <span>Antonina x Piotr · 19.09.2026 ·</span>
+            <span>Antonina x Piotr · 19.09.2026 ·</span>
+          </div>
+          <blockquote class="poster-quote shadow-poster">
+            <p data-i18n="postQuote">
+              P.S. Niech ten wieczor bedzie troche jak dobry film: z mocnym otwarciem, swietna
+              obsada i scena finalowa, o ktorej jeszcze dlugo sie opowiada.
+            </p>
+          </blockquote>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Antonina x Piotr</p>
+        <a href="assets/invitation.pdf" target="_blank" rel="noreferrer" data-i18n="footerInvite">
+          Zobacz zaproszenie PDF
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

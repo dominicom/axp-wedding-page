@@ -1,0 +1,10 @@
+{
+  "name": "wedding-landing-page",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Retro poster wedding landing page for Antonina and Piotr.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}
