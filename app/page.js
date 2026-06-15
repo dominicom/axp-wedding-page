@@ -7,6 +7,7 @@ import { ProgramSection } from '@/components/sections/program-section';
 import { RSVPSection } from '@/components/sections/rsvp-section';
 import { SiteNav } from '@/components/site-nav';
 import { content } from '@/lib/content';
+import ScrollToTop from '@/components/scroll-to-top';
 
 export default function Home() {
   const [language, setLanguage] = useState('pl');
@@ -29,6 +30,7 @@ export default function Home() {
           </a>
         </div>
       </footer>
+      <ScrollToTop />
     </div>
   );
 }

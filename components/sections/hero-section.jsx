@@ -3,8 +3,11 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { H1, P } from '@/components/ui/typography';
 
-const ceremonyDate = new Date('2026-09-19T15:00:00+02:00');
+// Note: Warsaw uses CEST (UTC+2) on 2026-09-19, so +02:00 is correct for that date.
+const ceremonyDate = new Date('2026-09-19T15:03:00+02:00');
+
 
 function getTimeLeft() {
   const now = new Date();
@@ -12,7 +15,7 @@ function getTimeLeft() {
   const totalSeconds = Math.floor(diff / 1000);
 
   return {
-    days: String(Math.floor(totalSeconds / 86400)).padStart(3, '0'),
+    days: String(Math.floor(totalSeconds / 86400)).padStart(2, '0'),
     hours: String(Math.floor((totalSeconds % 86400) / 3600)).padStart(2, '0'),
     minutes: String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0'),
     seconds: String(totalSeconds % 60).padStart(2, '0')
@@ -32,27 +35,27 @@ export function HeroSection({ dict }) {
       <div className="container hero-grid">
         <div className="hero-copy">
           <Badge className="mb-4">{dict.heroEyebrow}</Badge>
-          <h1>
-            Antonina <span>x</span> Piotr
-          </h1>
-          <p className="hero-lede">{dict.heroLede}</p>
+          <H1 posterShadow>
+            Antonina <span>{`×`}</span> Piotr
+          </H1>
+          <P posterShadow className="hero-lede">{dict.heroLede}</P>
 
           <div className="countdown" aria-label="Odliczanie do ceremonii">
             <div>
-              <strong>{timeLeft.days}</strong>
-              <span>{dict.countdownDays}</span>
+              <strong className="text-shadow-poster">{timeLeft.days}</strong>
+              <span className="text-shadow-poster">{dict.countdownDays}</span>
             </div>
             <div>
-              <strong>{timeLeft.hours}</strong>
-              <span>{dict.countdownHours}</span>
+              <strong className="text-shadow-poster">{timeLeft.hours}</strong>
+              <span className="text-shadow-poster">{dict.countdownHours}</span>
             </div>
             <div>
-              <strong>{timeLeft.minutes}</strong>
-              <span>{dict.countdownMinutes}</span>
+              <strong className="text-shadow-poster">{timeLeft.minutes}</strong>
+              <span className="text-shadow-poster">{dict.countdownMinutes}</span>
             </div>
             <div>
-              <strong>{timeLeft.seconds}</strong>
-              <span>{dict.countdownSeconds}</span>
+              <strong className="text-shadow-poster">{timeLeft.seconds}</strong>
+              <span className="text-shadow-poster">{dict.countdownSeconds}</span>
             </div>
           </div>
 
