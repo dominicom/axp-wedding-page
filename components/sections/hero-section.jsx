@@ -33,9 +33,15 @@ export function HeroSection({ dict }) {
   return (
     <section className="hero section" id="hero">
       <div className="container hero-grid">
+        <div className="hero-art" aria-hidden="true">
+          <div className="hero-art-plate" />
+          <img className="person person-left" src="/assets/art1.png" alt="Antonina" />
+          <img className="person person-right" src="/assets/art2.png" alt="Piotr" />
+        </div>
+
         <div className="hero-copy">
-          <Badge className="mb-4">{dict.heroEyebrow}</Badge>
-          <H1 posterShadow>
+          <Badge className="hero-eyebrow">19 września 2026</Badge>
+          <H1 posterShadow className="hero-title">
             Antonina <span>{`×`}</span> Piotr
           </H1>
           <P posterShadow className="hero-lede">{dict.heroLede}</P>
@@ -66,17 +72,6 @@ export function HeroSection({ dict }) {
             <Button asChild size="lg">
               <a href="#program">{dict.heroSecondary}</a>
             </Button>
-          </div>
-        </div>
-
-        <div className="hero-art" aria-label="Ilustracje Antoniny i Piotra">
-          <img className="paper-bg" src="/assets/bg2.jpg" alt="" />
-          <img className="person person-left" src="/assets/art1.png" alt="Antonina" />
-          <img className="person person-right" src="/assets/art2.png" alt="Piotr" />
-          <div className="date-stamp">
-            <span>19</span>
-            <span>09</span>
-            <span>26</span>
           </div>
         </div>
       </div>

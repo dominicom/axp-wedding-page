@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { H2, P } from '@/components/ui/typography';
 
 export function ProgramSection({ dict }) {
   return (
@@ -8,7 +9,7 @@ export function ProgramSection({ dict }) {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">{dict.programEyebrow}</p>
-          <h2>{dict.programTitle}</h2>
+          <H2 posterShadow className="decoration-(--paper)">{dict.programTitle}</H2>
         </div>
 
         <div className="event-grid">
