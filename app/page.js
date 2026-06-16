@@ -9,6 +9,7 @@ import { SiteNav } from '@/components/site-nav';
 import { content } from '@/lib/content';
 import ScrollToTop from '@/components/scroll-to-top';
 
+
 export default function Home() {
   const [language, setLanguage] = useState('pl');
   const dict = content[language];

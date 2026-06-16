@@ -48,19 +48,19 @@ export function HeroSection({ dict }) {
 
           <div className="countdown" aria-label="Odliczanie do ceremonii">
             <div>
-              <strong className="text-shadow-poster">{timeLeft.days}</strong>
+              <strong className="text-shadow-poster" suppressHydrationWarning>{timeLeft.days}</strong>
               <span className="text-shadow-poster">{dict.countdownDays}</span>
             </div>
             <div>
-              <strong className="text-shadow-poster">{timeLeft.hours}</strong>
+              <strong className="text-shadow-poster" suppressHydrationWarning>{timeLeft.hours}</strong>
               <span className="text-shadow-poster">{dict.countdownHours}</span>
             </div>
             <div>
-              <strong className="text-shadow-poster">{timeLeft.minutes}</strong>
+              <strong className="text-shadow-poster" suppressHydrationWarning>{timeLeft.minutes}</strong>
               <span className="text-shadow-poster">{dict.countdownMinutes}</span>
             </div>
             <div>
-              <strong className="text-shadow-poster">{timeLeft.seconds}</strong>
+              <strong className="text-shadow-poster" suppressHydrationWarning>{timeLeft.seconds}</strong>
               <span className="text-shadow-poster">{dict.countdownSeconds}</span>
             </div>
           </div>
