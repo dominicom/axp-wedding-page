@@ -122,6 +122,11 @@ h3 {
                 10px 10px 0 var(--black-soft);
 }
 
+.heading.elevated {
+    color: var(--paper);
+ }
+
+
 .container {
   width: var(--container);
   max-width: 1440px;

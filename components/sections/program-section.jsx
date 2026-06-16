@@ -1,15 +1,15 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { H2, P } from '@/components/ui/typography';
+import { H2, H3, H4, P } from '@/components/ui/typography';
 
 export function ProgramSection({ dict }) {
   return (
     <section className="section" id="program">
       <div className="container">
         <div className="section-heading">
-          <p className="eyebrow">{dict.programEyebrow}</p>
-          <H2 posterShadow className="decoration-(--paper)">{dict.programTitle}</H2>
+          <p className="eyebrow text-shadow-poster">{dict.programEyebrow}</p>
+          <H2 posterShadow>{dict.programTitle}</H2>
         </div>
 
         <div className="event-grid">
